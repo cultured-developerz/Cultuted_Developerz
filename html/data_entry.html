@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/data_entry_style.css">
+    <title>Data Entry Page</title>
+  </head>
+  <body>
+     <div class="nav-bar">
+        <div class="nav-left">
+            <img class="nav-bar-img" src="/images/nit logo.png" alt="LOGO"  />
+            <div class="heading">Green NIT Clean NIT</div>
+        </div>
+        <div class="links">
+            <div class="link-box home-link">
+                <a href="">Home</a>
+            </div>
+            <div class="link-box event-link">
+                <a href="profile.html">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+      <form action="add_user_data.asp" method>
+        <div>
+          Address:* <br>
+          <textarea class="address" name="address" id="address" placeholder="Your address" required></textarea> 
+        
+        </div>
+        <div>
+      
+          Contact Number: *<input type="number" name="phone number" value="phone number" class="phone-number" required>
+        
+        </div>
+        <div class="date-time">
+          
+          <input class="date" type="date" name="date" placeholder="Date" required>
+        
+          <input class="time" type="time" name="time" placeholder="Time">
+        
+        </div>
+        <div>
+      
+          Weight of organic waste: <input type="number" placeholder="(in kg)" name="organic weight" class="organic-weight">
+        
+        </div>
+        Weight of Other waste : <input type="number" name="other weight" class="other-weight" />
+        <br>
+         <button type="button" class="btn">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>
